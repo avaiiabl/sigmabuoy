@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Movies</title>
+    <style>
+        /* CSS styles for upcoming movies */
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #000000; padding: 0; margin: 0;}
+        header { background: #000000; color: #fff; padding: 20px; text-align: center;}
+        header h1 { font-size: 3rem; }
+
+        nav { background-color: #000000; overflow: hidden; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { float: left; width: 20%; text-align: center; }
+        nav ul li a { color: white; padding: 14px; display: block; text-decoration: none; }
+        nav ul li a:hover { background-color: #000000; }
+        a { text-decoration: none; color: #000000; }
+
+        .upcoming-movies {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .movie-card {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 220px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .movie-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Upcoming Movies</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav style="text-align: center;">
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+            <li><a href="upcoming-movies.html">Upcoming</a></li> <!-- Link to Upcoming page -->
+            <li><a href="contact.html">Contact</a></li> <!-- Link to Contacts page -->
+            <li><a href="credits.html">Credits</a></li> <!-- Link to Credits page -->
+        </ul>
+    </nav>
+
+    <!-- Main Content (Upcoming Movies List) -->
+    <div class="upcoming-movies">
+        <h2>Upcoming Movies</h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div class="movie-card">
+                <img src="imgs/A_Minecraft_Movie_poster (1).jpg "alt="Minecraft Movie">
+                <div class="movie-title">Minecraft Movie</div>
+            </div>
+            <div class="movie-card">
+                <img src="imgs/traindragon.jpg" alt="Train A Dragon Movie">
+                <div class="movie-title">Life Action Train A Dragon </div>
+            </div>
+            <div class="movie-card">
+                <img src="imgs/zootopia.jpg" alt="Zootopia 2">
+                <div class="movie-title">Zootopia 2</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
